@@ -5,6 +5,7 @@ import Order from './Order';
 import {fakeOrders} from '../data/fakeOrders';
 
 jest.mock('../utils/getDate');
+/* eslint-disable import/first */
 import {getDate} from '../utils/getDate';
 
 configure({ adapter: new Adapter() });
