@@ -31,11 +31,7 @@ describe('Order.js', () => {
   });
 
   it('render with fakeOrders[0]', () => {
-    const data = {
-      order: fakeOrders[0],
-    };
-
-    const wrapper = shallow(<Order {...data}/>);
+    const wrapper = shallow(<Order order={fakeOrders[0]}/>);
 
     expect(wrapper).toMatchSnapshot();
   });
